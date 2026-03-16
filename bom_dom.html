@@ -1,0 +1,86 @@
+<!-- bom_dom.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM_DOM</title>
+    <script src="./scripts/bom_dom.js" defer></script>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        #starbucks {}
+        #starbucks .tab_title {display: flex;}
+        #starbucks .tab_title a {padding: 20px; background: #f5f5f5;}
+        #starbucks .tab_title .active {background: #006633; color: #fff;}
+        #starbucks .tab_contents {width: 820px;}
+        #starbucks .tab_contents .contents {height: 400px; border:1px solid #006633;}
+        #starbucks .tab_contents .category {}
+        #starbucks .tab_contents .theme {}
+    </style>
+</head>
+<body>
+    <div id="starbucks">
+        <div class="tab_title">
+            <a href="#" class="active">카테고리</a>
+            <a href="#">테마</a>
+        </div>
+        <div class="tab_contents">
+            <div class="contents category">category내용</div>
+            <div class="contents theme">theme내용</div>
+        </div>
+    </div>
+    <div class="box">
+        <h1>대제목</h1>
+        <h2 class="title">중제목</h2>
+        <h3 class="title">소제목</h3>
+        <p id="txt">아이디 적용 문장</p>
+    </div>
+    <hr>
+    <button type="button"
+        onclick="alert('결제 완료되었습니다.')">결제 확인</button>
+    <button type="button"
+        onclick="alert('장바구니에 상품이 담겼습니다.')">장바구니 담기</button>
+    <button type="button"
+        onclick="window.confirm('인쇄하시겠습니까?')">인쇄</button>
+    <button type="button"
+        onclick="confirm('상품을 결제하시겠습니까?')">결제하기</button>
+    <button type="button"
+        onclick="window.location.href = 'https://google.com'">구글 바로가기</button>
+    <button type="button"
+        onclick="naverUrl()">네이버 바로가기</button>
+    <button type="button"
+        onclick="prt()">인쇄</button>
+    <button type="button"
+        onclick="open1()">파파고 번역</button>
+    <hr>
+    <button type="button" onclick="open2('naver')">네이버 바로가기</button>
+    <button type="button" onclick="open2('google')">구글 바로가기</button>
+    <button type="button" onclick="msg('결제')">결제하기</button>
+    <button type="button" onclick="msg('인쇄')">인쇄하기</button>
+    <button type="button" onclick="msg('가입')">가입하기</button>
+    <script>
+        // 내부 스크립트(body내부태그들을 모두 읽고 스크립트 실행하는 순서)
+        function naverUrl(){    
+            window.location.href = 'https://naver.com';
+        }
+        function prt(){ // 내장함수랑 함수명 동일하게 쓰면 오류!
+            window.confirm('인쇄하시겠습니까?');
+            window.print();
+        }
+        function open1(){
+            //window.open('주소', '위치')
+            window.open('https://papago.naver.com', '_blank')
+        }
+        function open2(url){
+            open(`https://${url}.com`, '_blank'); // 매개변수 사이 공통되는 부분이랑 아닌 부분을 잘 구분해야함
+            // open1 =/= 'open1'
+        }
+        function msg(txt){
+            confirm(`${txt}하시겠습니까?`);
+            //결제하시겠습니까?
+            //인쇄하시겠습니까?
+            //가입하시겠습니까?
+        }
+    </script>
+</body>
+</html>
