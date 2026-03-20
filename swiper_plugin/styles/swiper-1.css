@@ -1,0 +1,94 @@
+/* swiper-1.css */
+header {
+    background:rgba(255, 255, 255, 0.5);
+    height: 60px;
+    position:fixed; width: 100%; top: 0; left: 0;
+    z-index: 99;
+}
+header nav {float:right; padding-right: 60px;}
+header nav a {
+    display: inline-block; line-height: 60px; margin-left: 30px;
+}
+.top_btn {
+    position:fixed; width: 50px; height: 50px; bottom: 50px; right: 50px;
+    text-align: center; line-height: 50px; font-size: 0.88rem;
+    z-index: 88; border-radius: 50%; color: #fff;
+    background-color: #222; box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+#wrap {
+    min-width: 1800px;
+    height: 100vh;
+}
+#wrap .swiper-wrapper {}
+#wrap .swiper-wrapper .swiper-slide {}
+#wrap .swiper-wrapper .swiper-slide h1 {
+    font-size: 1.5rem; font-weight: 700; text-align: center; margin: 100px 0 0;
+}
+#wrap .swiper-wrapper .intro {
+    background-color: #ddd;
+}
+#wrap .swiper-wrapper .profile {
+    background-color: #bbb;
+}
+#wrap .swiper-wrapper .project1 {
+    background-color: #999;
+}
+#wrap .swiper-wrapper .project1 .group {
+    position:relative; width: max-content; margin: 0 auto;
+}
+#wrap .swiper-wrapper .project1 .web {
+    width: 600px; height: 400px; margin:30px auto 0;
+    /* overflow: visible; */ /* hidden 내장 */
+}
+#wrap .swiper-wrapper .project1 .web .swiper-wrapper {}
+#wrap .swiper-wrapper .project1 .web .swiper-wrapper .swiper-slide {}
+#wrap .swiper-wrapper .project1 .web .swiper-wrapper .slide1 {
+    background-color: orange;
+}
+#wrap .swiper-wrapper .project1 .web .swiper-wrapper .slide2 {
+    background-color: yellow;
+}
+#wrap .swiper-wrapper .project1 .web .swiper-wrapper .slide3 {
+    background-color: yellowgreen;
+}
+#wrap .swiper-wrapper .project1 .web .swiper-wrapper .slide4 {
+    background-color: skyblue;
+}
+#wrap .swiper-wrapper .project1 .web .swiper-wrapper .slide5 {
+    background-color: navy;
+}
+#wrap .swiper-wrapper .project1 .web .swiper-wrapper .slide6 {
+    background-color: plum;
+}
+#wrap .swiper-wrapper .project1 .web + .web_page {
+    /* background-color: white; */
+    /* transform:scale(1.2); */
+    /* absolute (기본내장) */
+    text-align: left;
+    left: -40px; bottom:0;
+}
+#wrap .swiper-wrapper .project1 .web + .web_page .swiper-pagination-current {color: brown;}
+#wrap .swiper-wrapper .project1 .web + .web_page .swiper-pagination-total {color: purple;}
+#wrap .swiper-wrapper .project1 .web + .web_page span {
+    /* background-color: red; */
+}
+#wrap .swiper-wrapper .project2 {
+    background-color: #777;
+}
+#wrap .swiper-wrapper .project2 .graphic_group {
+    position: relative; width: max-content; margin: 0 auto;
+}
+#wrap .swiper-wrapper .project2 .graphic_group .graphic {
+    width: 600px; height: 400px; margin: 50px 0 0;
+}
+#wrap .swiper-wrapper .project2 .graphic_group .graphic_page {
+    left:0; top:-30px; bottom:auto;/* 기본값으로 bottom이 들어있으므로 bottom:auto 처리한 후 top값 작성 */
+    /* position:absolute 는 이미 들어있는 값이므로 작성안함 */
+}
+#wrap .swiper-wrapper .project2 .graphic_group .graphic_page span {background-color: pink;}
+#wrap .swiper-wrapper .project2 .graphic_group .graphic .swiper-wrapper {}
+#wrap .swiper-wrapper .project2 .graphic_group .graphic .swiper-wrapper .swiper-slide {}
+#wrap .swiper-wrapper .project2 .graphic_group .graphic .swiper-wrapper .slide1 {background-color: pink;}
+#wrap .swiper-wrapper .project2 .graphic_group .graphic .swiper-wrapper .slide2 {background-color: paleturquoise;}
+#wrap .swiper-wrapper .project2 .graphic_group .graphic .swiper-wrapper .slide3 {background-color: pink;}
+#wrap .swiper-wrapper .project2 .graphic_group .graphic .swiper-wrapper .slide4 {background-color: paleturquoise;}
