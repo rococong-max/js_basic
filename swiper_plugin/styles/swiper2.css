@@ -1,0 +1,97 @@
+/* swiper2.css */
+#wrap {min-width: 1200px;}
+#wrap header,#wrap footer {
+    background: #111; color: #fff; text-align: center; line-height: 100px;
+}
+#wrap main {}
+#wrap main #hero {}
+#wrap main #hero .hero_bnr {/* position:relative;(내장) */
+    width: 100%; height: calc(100vh - 100px); /* 뷰포트높이 - 헤더 높이 */
+}
+#wrap main #hero .hero_bnr .swiper-wrapper {}/* position:relative;(내장),width,height(x) */
+#wrap main #hero .hero_bnr .swiper-wrapper .swiper-slide { /* position:relative;(내장),width,height(x) */
+    background-size: cover; background-position: center;
+}
+#wrap main #hero .hero_bnr .swiper-wrapper .swiper-slide .txt {
+    text-align: center; 
+    position:absolute; top:50%; transform: translateY(-50%); width: 100%;
+}
+#wrap main #hero .hero_bnr .swiper-wrapper .swiper-slide .txt p {}
+#wrap main #hero .hero_bnr .swiper-wrapper .swiper-slide .txt h1 {
+    font-weight: 700; line-height: 1.7; font-size: 1.5rem;
+}
+#wrap main #hero .hero_bnr .swiper-wrapper .slide1 {background-image: url(../images/bnr1.jpg);}
+#wrap main #hero .hero_bnr .swiper-wrapper .slide2 {background-image: url(../images/bnr2.jpg)}
+#wrap main #hero .hero_bnr .pagi_bar {
+    background-color: yellow;
+    position:absolute; bottom: 100px; left: 100px; width: max-content; z-index: 99;
+}
+#wrap main #hero .hero_bnr .pagi_bar .pg {}
+#wrap main #hero .hero_bnr .pagi_bar .pg .swiper-pagination-current,
+#wrap main #hero .hero_bnr .pagi_bar .pg .swiper-pagination-total {
+    position:absolute; top:-6px;
+}
+#wrap main #hero .hero_bnr .pagi_bar .pg .swiper-pagination-current {left: -20px;}
+#wrap main #hero .hero_bnr .pagi_bar .pg .swiper-pagination-total {right: -20px;}
+#wrap main #hero .hero_bnr .pagi_bar .bar_bg {
+    width: 200px; background: #555; height: 2px;
+}
+#wrap main #hero .hero_bnr .pagi_bar .bar_bg .bar {
+    display:block; width: 100%; height: 100%;
+    background:#fff;
+    transform-origin:left top;
+}
+/* 부모 bar_bg에 active란 클래스가 적용되면 자식bar에 애니메이션 적용 */
+#wrap main #hero .hero_bnr .pagi_bar .bar_bg.active .bar {/* .bar_bg.active 사이에 공백 X */
+    animation:barAni 3s linear;
+}
+@keyframes barAni {
+    0% {transform: scaleX(0);}
+    100% {transform: scaleX(1);}
+}
+#wrap main .best {}
+#wrap main .best h1 {}
+#wrap main .best p {}
+#wrap main .best #best_item {}
+#wrap main .best #best_item .best_swiper {
+    width: 1100px; border:2px solid red; margin:0 auto; padding: 30px 0; background: #ddd;
+}
+#wrap main .best #best_item .best_swiper .swiper-wrapper {}
+#wrap main .best #best_item .best_swiper .swiper-wrapper .swiper-slide {transition: transform 1s;}
+#wrap main .best #best_item .best_swiper .swiper-wrapper .swiper-slide-active {transform: scale(1.1);}
+#wrap main .best #best_item .best_swiper .swiper-wrapper .swiper-slide-active a .photo ~ *,
+#wrap main .best #best_item .best_swiper .swiper-wrapper .swiper-slide-active a ~ * {transform: scale(0.9);}
+#wrap main .best #best_item .best_swiper .swiper-wrapper .swiper-slide a {}
+#wrap main .best #best_item .best_swiper .swiper-wrapper .swiper-slide a .photo {}
+#wrap main .best #best_item .best_swiper .swiper-wrapper .swiper-slide a .photo img {width: 100%;}
+#wrap main .best #best_item .best_swiper .swiper-wrapper .swiper-slide a h2 {}
+#wrap main .best #best_item .best_swiper .swiper-wrapper .swiper-slide .price {}
+#wrap main .best #best_item .best_swiper .swiper-wrapper .slide1 {}
+#wrap main .best #best_item .best_swiper .swiper-wrapper .slide2 {}
+#wrap main .best #best_item .best_swiper .swiper-wrapper .slide3 {}
+#wrap main .best #best_item .best_swiper .swiper-wrapper .slide4 {}
+#wrap main .best #best_item .best_swiper .swiper-wrapper .slide5 {}
+#wrap main .best #best_item .best_swiper .swiper-wrapper .slide6 {}
+#wrap main .new {}
+#wrap main .new > h1 {
+    font-size: 1.5rem; font-weight: 700; text-align: center;
+    padding: 100px 0 30px;
+}
+#wrap main .new .new_item {}
+#wrap main .new .new_item .new_swiper {
+    width: 1200px; border: 2px solid blue; margin:0 auto;
+}
+#wrap main .new .new_item .new_swiper .swiper-slide {}
+#wrap main .new .new_item .new_swiper .swiper-slide a {}
+#wrap main .new .new_item .new_swiper .swiper-slide a .photo {}
+#wrap main .new .new_item .new_swiper .swiper-slide a .photo img {width: 100%;}
+#wrap main .new .new_item .new_swiper .swiper-slide a h1 {}
+#wrap main .new .new_item .new_swiper .swiper-slide a .price {}
+#wrap main .new .new_item .new_swiper .slide1 {}
+#wrap main .new .new_item .new_swiper .slide2 {}
+#wrap main .new .new_item .new_swiper .slide3 {}
+#wrap main .new .new_item .new_swiper .slide4 {}
+#wrap main .new .new_item .new_swiper .slide5 {}
+#wrap main .new .new_item .new_swiper .slide6 {}
+#wrap main .new .new_item .new_pg {}
+#wrap footer {}

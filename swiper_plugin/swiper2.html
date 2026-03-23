@@ -1,0 +1,170 @@
+<!-- swiper2.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiper-내비게이션</title>
+    <!-- 플러그인 필수 연결 -->
+    <!--swiper 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--swiper 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- 사용자 파일 -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/swiper2.css">
+    <script src="./scripts/swiper2.js" defer></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>header</header>
+        <main>
+            <div id="hero">
+                <div class="swiper hero_bnr">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <div class="txt">
+                                <p>설명설명설명설명설명</p>
+                                <h1>제목제목제목제목</h1>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <div class="txt">
+                                <p>설명설명설명설명설명</p>
+                                <h1>제목제목제목제목</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagi_bar">
+                        <div class="pagination pg"></div>
+                        <div class="bar_bg">
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="best">
+                <h1>베스트 상품</h1>
+                <p>실시간 베스트 상품 목록입니다.</p>
+                <div id="best_item">
+                    <div class="swiper best_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1">
+                                <a href="#">
+                                    <p class="photo"><img src="./images/convers_001.jpg" alt=""></p>
+                                    <h2>척 70 테일러올스타 허비</h2>
+                                </a>
+                                <p class="price">60,000원</p>
+                            </div>
+                            <div class="swiper-slide slide2">
+                                <a href="#">
+                                    <p class="photo"><img src="./images/convers_002.jpg" alt=""></p>
+                                    <h2>레더 빈티지 화이트</h2>
+                                </a>
+                                <p class="price">160,000원</p>
+                            </div>
+                            <div class="swiper-slide slide3">
+                                <a href="#">
+                                    <p class="photo"><img src="./images/convers_003.jpg" alt=""></p>
+                                    <h2>척 70 퍼포레이티드 레더 블랙</h2>
+                                </a>
+                                <p class="price">100,000원</p>
+                            </div>
+                            <div class="swiper-slide slide4">
+                                <a href="#">
+                                    <p class="photo"><img src="./images/convers_004.jpg" alt=""></p>
+                                    <h2>윈스타 95 썬더 웨일</h2>
+                                </a>
+                                <p class="price">95,000원</p>
+                            </div>
+                            <div class="swiper-slide slide5">
+                                <a href="#">
+                                    <p class="photo"><img src="./images/convers_005.jpg" alt=""></p>
+                                    <h2>척 70 컬러 팝 클리어 스카이즈</h2>
+                                </a>
+                                <p class="price">119,000원</p>
+                            </div>
+                            <div class="swiper-slide slide6">
+                                <a href="#">
+                                    <p class="photo"><img src="./images/convers_006.jpg" alt=""></p>
+                                    <h2>척스타 95 서니 아웃룩</h2>
+                                </a>
+                                <p class="price">90,000원</p>
+                            </div>
+                            <div class="swiper-slide slide7">
+                                <a href="#">
+                                    <p class="photo"><img src="./images/convers_006.jpg" alt=""></p>
+                                    <h2>척스타 95 서니 아웃룩</h2>
+                                </a>
+                                <p class="price">90,000원</p>
+                            </div>
+                            <div class="swiper-slide slide8">
+                                <a href="#">
+                                    <p class="photo"><img src="./images/convers_006.jpg" alt=""></p>
+                                    <h2>척스타 95 서니 아웃룩</h2>
+                                </a>
+                                <p class="price">90,000원</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="new">
+                <h1>NEW</h1>
+                <div class="new_item">
+                    <div class="swiper new_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1">
+                                <a href="#">
+                                    <p class="photo"><img src="./images/nike_001.jpg" alt=""></p>
+                                    <h1>나이키 보메로 플러스</h1>
+                                    <p class="price">100,000원</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide2">
+                                <a href="#">
+                                    <p class="photo"><img src="./images/nike_002.jpg" alt=""></p>
+                                    <h1>나이키 보메로 플러스</h1>
+                                    <p class="price">100,000원</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide3">
+                                <a href="#">
+                                    <p class="photo"><img src="./images/nike_003.jpg" alt=""></p>
+                                    <h1>나이키 보메로 플러스</h1>
+                                    <p class="price">100,000원</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide4">
+                                <a href="#">
+                                    <p class="photo"><img src="./images/nike_004.jpg" alt=""></p>
+                                    <h1>나이키 보메로 플러스</h1>
+                                    <p class="price">100,000원</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide5">
+                                <a href="#">
+                                    <p class="photo"><img src="./images/nike_005.jpg" alt=""></p>
+                                    <h1>나이키 보메로 플러스</h1>
+                                    <p class="price">100,000원</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide6">
+                                <a href="#">
+                                    <p class="photo"><img src="./images/nike_006.jpg" alt=""></p>
+                                    <h1>나이키 보메로 플러스</h1>
+                                    <p class="price">100,000원</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination new_pg"></div>
+                </div>
+            </div>
+        </main>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>

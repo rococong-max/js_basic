@@ -67,3 +67,35 @@
 * 1. swiper : position, overflow
 * 2. swiper-wrapper : flex
 * 2. swiper-slide : flex,transform
+## Swiper Custom function
+1. `renderFraction:function(){}`
+    * pagination:{} 안에 작성해야함.
+    * type:'fraction' 일 때 사용 가능
+    * `const 변수명 = new Swiper(적용대상,{`
+        `pagination:{`
+            `el:'적용대상',`
+            `type:'fraction',`
+            `renderFraction:function(current,total){`
+                `let 변수 = <태그 class=${매개변수}></태그>`
+                `return 변수;`
+            `}`
+        `}`
+    `})`
+## 슬라이드 변경 시 실행되는 Custom 함수 `on:{}`
+* `new Swiper(대상,{옵션})` 옵션위치에 바로 작성되는 함수
+1. `init:function(){}`
+    * 슬라이드가 처음 시작할 때 실행되는 함수
+    * `on:{ init:function(){}, },`
+2. `slideChangeTransitionStart:function(){}`
+    * 슬라이드 전환이 시작될 때 실행되는 함수
+3. `slideChangeTransitonEnd;function(){}`
+    * 슬라이드 전환이 종료되고 실행되는 함수
+    * 초기화(reset) 용도로 가끔 사용
+## 클래스 적용/해제 함수
+1. `요소.ClassList.add('.적용클래스명')`
+2. `요소.ClassList.remove('.삭제클래스명')`
+## 한 화면에 여러 개의 슬라이드가 보이는 경우 사용할 수 있는 옵션 값
+* `slidesPerView:,`한 화면에 보이는 슬라이드 개수 (.5단위 가능)
+* `spaceBetween:,` 슬라이드 사이 간격
+* `slidesPerGroup:,` 드래그 시 넘어가는 슬라이드 개수 조절
+
