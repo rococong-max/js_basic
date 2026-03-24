@@ -1,0 +1,113 @@
+/* swiper.css */
+#wrap {
+    min-width: 1200px;
+}
+#wrap header {
+    position: sticky; top:-50px; z-index: 999; left: 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+#wrap header,
+#wrap footer {
+    width: 100%; line-height: 100px; text-align: center; font-size: 0.95rem;
+    background: linear-gradient(90deg, #ddd, #fff, #ddd);
+}
+#wrap main {}
+#wrap main #hero_wrap {}
+#wrap main #hero_wrap .ssf_hero {height: 90vh;}
+#wrap main #hero_wrap .ssf_hero .prev,
+#wrap main #hero_wrap .ssf_hero .next {
+    background-image: url(../images/arrow.png);
+    background-position: center; background-size: contain;
+}
+#wrap main #hero_wrap .ssf_hero .prev {transform:scaleX(-1);}
+#wrap main #hero_wrap .ssf_hero .prev svg,
+#wrap main #hero_wrap .ssf_hero .next svg {display:none;}
+#wrap main #hero_wrap .ssf_hero .swiper-wrapper {}
+#wrap main #hero_wrap .ssf_hero .swiper-wrapper .swiper-slide {
+    background-position: center; background-size: cover;
+}
+#wrap main #hero_wrap .ssf_hero .swiper-wrapper .swiper-slide a {
+    display: flex; height:100%; background: rgba(0,0,0,0.5);
+    flex-flow:column nowrap; justify-content: center; text-align: center; gap: 12px;
+}
+#wrap main #hero_wrap .ssf_hero .swiper-wrapper .swiper-slide a * {color: #fff;}
+#wrap main #hero_wrap .ssf_hero .swiper-wrapper .swiper-slide a p {font-weight: 500;}
+#wrap main #hero_wrap .ssf_hero .swiper-wrapper .swiper-slide a h1 {
+    font-size: 2rem; font-weight: 600; line-height: 1.3; /* margin:12px 0; -> 구성 태그가 홀수이므로 h1에게 위아래 여백을 줘서 사이공간 만들수있음 */
+}
+#wrap main #hero_wrap .ssf_hero .swiper-wrapper .swiper-slide a h1+p {font-weight: 300; line-height: 1.5;}
+#wrap main #hero_wrap .ssf_hero .swiper-wrapper .slide1 {background-image: url(https://img.ssfshop.com/cmd/LB_500x660/src/https://img.ssfshop.com/goods/MCBR/26/03/03/GM0026030394256_0_THNAIL_ORGINL_20260305112713205.jpg);}
+#wrap main #hero_wrap .ssf_hero .swiper-wrapper .slide2 {background-image: url(https://img.ssfshop.com/cmd/LB_500x660/src/https://img.ssfshop.com/goods/MCBR/26/03/04/GM0026030497865_0_THNAIL_ORGINL_20260306113858354.jpg)}
+#wrap main #hero_wrap .ssf_hero .swiper-wrapper .slide3 {background-image: url(https://img.ssfshop.com/display/category/THM/A38/A08/contents/23454_418336_15_KOR_20260320114346.jpg)}
+#wrap main #hero_wrap .ssf_hero .swiper-wrapper .slide4 {background-image: url(https://img.ssfshop.com/cmd/LB_750x1000/src/https://img.ssfshop.com/promotion/event/2025/03/18/EV202503180148346/EV202503180148346_RPRST_IMG_1PCE_PC_MOBILE_KOR_20250321155529.jpg)}
+#wrap main #hero_wrap .ssf_hero .swiper-wrapper .slide5 {background-image: url(https://img.ssfshop.com/cmd/LB_500x660/src/https://img.ssfshop.com/goods/8SBR/26/01/28/GM0026012843073_0_THNAIL_ORGINL_20260211110144772.jpg)}
+#wrap main #hero_wrap .ssf_hero .swiper-wrapper .slide6 {background-image: url(https://img.ssfshop.com/display/html/MOSA/20260225/115422/316_1181_%EA%B3%B5%ED%86%B5%EB%B0%B0%EB%84%88_01.jpg)}
+/* ======================================= 브랜드 */
+#wrap main #brand_wrap {padding: 50px 0;}
+#wrap main #brand_wrap > h1 {
+    text-align: center;
+    font-size: 1.5rem; font-weight: 600; margin:0 0 30px;
+
+}
+#wrap main #brand_wrap .contents {
+    display: flex; width: 1200px; margin: 0 auto; gap: 20px;
+}
+#wrap main #brand_wrap .contents .brand_bnr {
+    background-image: url(https://www.converse.co.kr/image/gnbbanner/260107_Chuck_Taylor.jpg);
+    background-position:center; background-size: cover; 
+    width: 50%; height: 300px;
+}
+#wrap main #brand_wrap .contents .brand_bnr .txt {
+    display: flex; flex-flow: column nowrap; height: 100%;
+    justify-content: center; text-align: center;
+}
+#wrap main #brand_wrap .contents .brand_bnr .txt > * {color: #fff;}
+#wrap main #brand_wrap .contents .brand_bnr .txt p {}
+#wrap main #brand_wrap .contents .brand_bnr .txt h1 {font-size: 1.5rem; font-weight: 600; margin:16px 0;}
+#wrap main #brand_wrap .contents .brand_bnr .txt h1+p {}
+#wrap main #brand_wrap .contents .brand_slide_wrap {
+    width: 50%; position: relative;
+    display:flex; align-items: center;
+}
+#wrap main #brand_wrap .contents .brand_slide_wrap .brand_slide {width: 95%;}
+#wrap main #brand_wrap .contents .brand_slide_wrap .brand_slide .swiper-wrapper {}
+#wrap main #brand_wrap .contents .brand_slide_wrap .brand_slide .swiper-wrapper .swiper-slide {}
+#wrap main #brand_wrap .contents .brand_slide_wrap .brand_slide .swiper-wrapper .swiper-slide .photo_box{position: relative;}
+#wrap main #brand_wrap .contents .brand_slide_wrap .brand_slide .swiper-wrapper .swiper-slide .photo_box .photo {}
+#wrap main #brand_wrap .contents .brand_slide_wrap .brand_slide .swiper-wrapper .swiper-slide .photo_box .photo img {width: 100%;}
+#wrap main #brand_wrap .contents .brand_slide_wrap .brand_slide .swiper-wrapper .swiper-slide .photo_box .like {
+    display: block; width: 16px;
+    position:absolute; bottom: 10px; right: 10px;
+}
+#wrap main #brand_wrap .contents .brand_slide_wrap .brand_slide .swiper-wrapper .swiper-slide .photo_box .like img {width: 100%;}
+#wrap main #brand_wrap .contents .brand_slide_wrap .brand_slide .swiper-wrapper .swiper-slide > a .brand {}
+#wrap main #brand_wrap .contents .brand_slide_wrap .brand_slide .swiper-wrapper .swiper-slide > a h1 {margin:8px 0;}
+#wrap main #brand_wrap .contents .brand_slide_wrap .brand_slide .swiper-wrapper .swiper-slide > a .price {font-size: 1.1rem; font-weight:600;}
+#wrap main #brand_wrap .contents .brand_slide_wrap .b_prev,
+#wrap main #brand_wrap .contents .brand_slide_wrap .b_next {transform: scale(0.4);}
+#wrap main #brand_wrap .contents .brand_slide_wrap .b_prev {left: -20px;}
+#wrap main #brand_wrap .contents .brand_slide_wrap .b_next {right: -20px;}
+#wrap main #brand_wrap .contents .brand_slide_wrap .b_prev svg,
+#wrap main #brand_wrap .contents .brand_slide_wrap .b_next svg {color: #888;}
+/* ======================================== 리뷰 */
+#wrap {}
+#wrap main {}
+#wrap main #review_wrap {}
+#wrap main #review_wrap > h1 {}
+#wrap main #review_wrap .review_slide_wrap {}
+#wrap main #review_wrap .review_slide_wrap .review_slide {}
+#wrap main #review_wrap .review_slide_wrap .review_slide .swiper-wrapper {}
+#wrap main #review_wrap .review_slide_wrap .review_slide .swiper-wrapper .swiper-slide {}
+#wrap main #review_wrap .review_slide_wrap .review_slide .swiper-wrapper .swiper-slide .photo_txt {}
+#wrap main #review_wrap .review_slide_wrap .review_slide .swiper-wrapper .swiper-slide .photo_txt p {}
+#wrap main #review_wrap .review_slide_wrap .review_slide .swiper-wrapper .swiper-slide .product {}
+#wrap main #review_wrap .review_slide_wrap .review_slide .swiper-wrapper .swiper-slide .product .photo {}
+#wrap main #review_wrap .review_slide_wrap .review_slide .swiper-wrapper .swiper-slide .product .photo img {width: 100%;}
+#wrap main #review_wrap .review_slide_wrap .review_slide .swiper-wrapper .swiper-slide .product .txt {}
+#wrap main #review_wrap .review_slide_wrap .review_slide .swiper-wrapper .swiper-slide .product .txt h1 {}
+#wrap main #review_wrap .review_slide_wrap .review_slide .swiper-wrapper .swiper-slide .product .txt .price {}
+#wrap main #review_wrap .review_slide_wrap .review_slide .swiper-wrapper .swiper-slide .product .txt .price span {}
+#wrap main #review_wrap .review_slide_wrap .review_slide .swiper-wrapper .swiper-slide .product .txt .price span:nth-child(1) {}
+#wrap main #review_wrap .review_slide_wrap .review_slide .swiper-wrapper .swiper-slide .product .txt .price span:nth-child(2) {}
+#wrap main #review_wrap .review_slide_wrap .review_slide .swiper-wrapper .swiper-slide .product .txt .price span:nth-child(3) {}
+#wrap main #review_wrap .review_slide_wrap .review_slide .swiper-wrapper .swiper-slide .product {}
