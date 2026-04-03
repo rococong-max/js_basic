@@ -224,3 +224,46 @@
 * `{}` 안 실행 명령이 1줄이면 중괄호 생략가능, 2줄이상이면 중괄호 필수
 * `if(){}`,`if(){}`
     * if가 새로 써있다면 기존 조건식과는 별개의 조건식으로 구분함
+## 반복문
+* 단수 함수실행만 반복하는 사용자정의함수와 다르게 한단계 업그레이드헤서 DOM요소부터 이벤트까지 모든 자바스크립ㅌ, 요소를 반복시켜 유지보수성을 향상시키는 반복문
+### for(초기값; 조건식; 증김식){반복실행결과}
+1. 초기값 (처음 한번만 실행)
+2. 조건식 (조건이 참이면 반복실행, 거짓이면 반복종료)
+3. 반복실행결과 (조건이 참일때)
+4. 증감식 (결과 실행후 1증가 또는 1감소)
+5. 2 -> 3 -> 4 반복 (2번 조건이 거짓이 되면 종료)
+### for 반복문 예시
+* 1 ~ 10까지 반복
+    * `for(let i = 1; i<11; i++){}`
+    * `for(let i = 1; i<=10; i++){}`
+    * `for(let i = 0; i<10; i++){}`
+* 5 ~ 15까지 반복
+    * `for(let i = 5; i<16; i++){}`
+    * `for(let i = 5; i<=15; i++){}`
+* 5 ~ 0까지 반복
+    * `for(let i = 5; i>=0; i--){}`
+## DOM 요소 생성, 삽입
+### textContent 속성
+* 문자열데이터를 삽입할 때 사용하는 속성(태그취급안함)
+* 로그인, 회원가입, 장바구니, 구매결제 등 에러 메세지 전달용
+    * `p.textContent = '아이디를 입력하세요';`
+    * `span.textContent = '잔액이 부족합니다';` 
+### innerHTML 속성
+* 태그를 포함한 문자열데이터를 삽입할 때 사용하는 속성
+* 태그도 단순 문자열로 변환해서 취급함
+    * `p.innerHTML = '아이디를<br>입력하세요';`
+    * `span.innerHTML = '<em>잔액이</em> 부족합니다';` 
+### createElement 함수
+* 태그를 객체로 인식해서 처리함
+* 부모-자식-자손 등의 복잡한 처리를 할 때 유용함
+* 위 함수로 생성된 객체는 `appendClide()`함수로 대입해야함
+    * `const ul = document.createElement('ul');`
+    * `const dd = document.createElement('dd');`
+    * `const input = document.createElement('input');`
+### appendClide 함수
+* 특정 요소의 마지막 자식 위치로 createElement로 생성한 객체를 삽입해주는 내장함수
+    * `main.appendChild(ul);`
+    * `dl.appendChild(dl);`
+    * `form.appendChild(form);`
+### cloneNode 힘수
+* 

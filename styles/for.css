@@ -1,0 +1,7 @@
+main {display: flex;}
+.dan {
+    margin: 10px; border:1px dotted #ccc; padding: 20px;
+    width: max-content; /* display: inline-block; */
+}
+.dan h1 {font-weight: 600; margin: 0 0 20px;}
+.dan .result {line-height: 2; letter-spacing: 0.06rem;}
