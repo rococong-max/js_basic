@@ -1,0 +1,14 @@
+#wrap {}
+#wrap header {height: 40px; background-color: aqua;}
+#wrap header .gnb {
+    display:flex; gap:20px; height: 100%;
+    justify-content: center; align-items: center; 
+}
+#wrap header .gnb li {position: relative;}
+#wrap header .gnb li > a {}
+#wrap header .gnb li .lnb {
+    position: absolute; top: 20px; left: 0;
+    width: 100%;
+}
+#wrap header .gnb li .lnb li {}
+#wrap header .gnb li .lnb li a {}
