@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/for_es6.css">
+    <script src="./scripts/for_es6.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="#" id="m_nav_open">전체메뉴</a><!-- mobile약자로 m붙여주기 -->
+        <!-- 전체메뉴 클릭 시 열리는 메뉴 -->
+        <div class="m_bg">
+            <div class="m_side_wrap">
+                <div class="top">
+                    <a href="#" class="close">X</a>
+                    <h1><a href="#">이낙근찹쌀떡</a></h1>
+                </div>
+                <div class="m_nav"><!-- js붙여넣기 위치 --></div>
+                <div class="user_menu">
+                    <div class="login_cart"><!-- js붙여넣기 위치 --></div>
+                    <a href="#" class="bookmark">관심상품</a>
+                </div>
+            </div>
+        </div>
+        <!-- 우측메뉴(desktop~tablet) -->
+        <div class="right_menu">
+            <nav>
+                <!-- ul.gnb>li*4>a+ul.lnb>li>a -->
+                <ul class="gnb">
+                    <li>
+                        <a href="#">구매하기</a>
+                        <ul class="lnb">
+                            <li><a href="#">전체상품</a></li>
+                            <li><a href="#">찹쌀떡 세트</a></li>
+                            <li><a href="#">선물세트</a></li>
+                            <li><a href="#">정기구독</a></li>
+                            <li><a href="#">베이커리</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">브랜드소개</a>
+                        <ul class="lnb">
+                            <li><a href="#">이낙근찹쌀떡</a></li>
+                            <li><a href="#">이낙근명장</a></li>
+                            <li><a href="#">제품라인</a></li>
+                            <li><a href="#">매장안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">공지사항</a>
+                        <ul class="lnb">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">리뷰</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                        <ul class="lnb">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">1:1문의</a></li>
+                            <li><a href="#">Q&A</a></li>
+                            <li><a href="#">대량구매</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="login_cart">
+                <a href="#" class="login">
+                    <img src="https://cdn-icons-png.flaticon.com/128/456/456283.png" alt="로그인">
+                    <span>로그인/회원가입</span>
+                </a>
+                <a href="#" class="cart">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3144/3144456.png" alt="장바구니">
+                    <span>장바구니</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <dl class="box">
+        <dt>제목</dt>
+        <dd>내용1</dd>
+        <dd>내용2</dd>
+        <dd>내용3</dd>
+        <dd>내용4</dd>
+        <dd>내용5</dd>
+    </dl>
+</body>
+</html>
