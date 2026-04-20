@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쇼핑몰 상품 필터</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/filter.css">
+    <script src="./scripts/filter.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>BEST</h1>
+        <!-- 필터 종류(전체/과일/채소) -->
+        <div class="filter">
+            <button type="button" id="filter_view">필터보기 <span>▼</span></button>
+            <div class="filter_list">
+                <a href="#" class="list list1" data-name="all">전체보기</a>
+                <a href="#" class="list list2" data-name="fruit">과일</a>
+                <a href="#" class="list list3" data-name="veggi">채소</a>
+            </div>
+        </div>
+        <!-- 필터에 따라 나오는 전체 내용 -->
+        <ul class="contents">
+            <li><a href="#" data-category="fruit">사과</a></li>
+            <li><a href="#" data-category="veggi">브로콜리</a></li>
+            <li><a href="#" data-category="fruit">바나나</a></li>
+            <li><a href="#" data-category="veggi">당근</a></li>
+        </ul>
+    </main>
+</body>
+</html>
